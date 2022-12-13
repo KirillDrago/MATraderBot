@@ -13,7 +13,7 @@ bot = telebot.TeleBot(API_KEY)
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
-    bot.reply_to(message, "Hi, how are you doing?")
+    bot.reply_to(message, "Hi, enter the pair you want to trade (BTCUSDT, ETHUSDT...)")
 
 
 @bot.message_handler(content_types=["text"])
